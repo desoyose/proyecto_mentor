@@ -4,150 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/styles.css" rel="stylesheet">
+  <link href="/src/style.css" rel="stylesheet">
   <title>Mi Proyecto</title>
 </head>
 
-<body class="bg-gray-100 font-inconsolata">
-  <div class="relative layout flex justify-center overflow-hidden mx-auto pb-10">
-    <div class="container flex flex-col z-50 lg:w-[60%] w-full justify-center mt-12 pl-5">
-      <!-- Añadido space-y-8 y items-center -->
-      <div class="flex justify-center mb-12">
-        <img src="./images/logo-full.svg" alt="Logo">
-      </div>
-
-      <div id="container2" class=" flex-col justify-center align-middle hidden overflow-hidden">
-        <h1 class="text-Neutral-0 text-4xl font-bold text-center"><span
-            class="bg-gradient-to-r from-Neutral-0 to-Orange-700 bg-clip-text text-5xl font-extrabold text-transparent">Congrats,
-            <span id="new-name">pepe</span></span><br> Your ticket is ready.</h1>
-        <div class="w-[350px] mx-auto text-center mt-12">
-          <p class="text-Neutral-0"> We've emailed your ticket to <br><span id="header__name" class="text-Orange-500">
-              jorgenav@gmail.com</span> and will send updates in the run up to the event.</p>
-
+<body class="bg-gray-100 font-Rubik  relative">
+ 
+  <div id="actividad-container" class="layout p-4 bg-black  grid-rows-4 xl:grid grid-cols-12 xl:grid-rows-2 gap-y-4 absolute left-[50%] top-[50%] translate-x-[-50%] xl:min-h-[550px] w-full xl:max-w-[1400px]  xl:gap-4 " >
+    <div class="tarjeta__cab primera bg-Dark-blue mb-4 h-52 rounded-xl xl:col-span-3 xl:row-span-2 xl:min-h-full md:row-span-2 md:col-span-3">
+      <div class="flex flex-row h-32 w-full items-center p-3 rounded-xl bg-Blue justify-center xl:items-start xl:pl-4 xl:flex-col xl:h-80">
+        <div class="tarjeta__img  border-4 border-blue-100  w-16 h-16 rounded-full xl:w-24 xl:h-56 xl:mt-10 xl:mb-6 xl:justify-start xl:ml-8">
+          <img class="object-cover w-full" src="./images/image-jeremy.png" alt="">
         </div>
-      </div>
-      <div id="body2"  class="hidden align-middle justify-center relative mt-12">
-        <div class="absolute flex w-[300px] lg:w-[600px] h-auto">
-          <div class="flex flex-row justify-between w-[100%] p-4">
-            <div class="flex flex-col mt-5 mb-12">
-              <div>
-                <img src="./images/logo-full.svg" alt="">
-              </div>
-              <div class="text-Neutral-0 font-bold mb-12">
-                <p>Jan 31, 2025 / Ausrin. TX</p>
-              </div>
-              <div class="flex flex-row align-middle items-center">
-                <div class="w-24 h-24 rounded-md overflow-hidden ">
-                  <img class="w-[100%]" id="new-img" src="./images/image-avatar.jpg" alt="">
-                </div>
-                <div class="flex  flex-col ml-8">
-                  <p id="new-name2" class="text-Neutral-0 text-3xl">Jonathan Kristof</p>
-                  <div class="flex flex-row">
-                    <img src="./images/icon-github.svg" alt="">
-                    <p id="new-username" class="text-Neutral-0">@jonatankristof1021</p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-            <div class="rotate-90 flex align-middle justify-center items-center">
-              <p class="text-Neutral-500 text-3xl">#01609</p>
-
-            </div>
+        <div class="tarjeta__info flex flex-col ml-4 text-Pale-Blue justify-center xl:mb-10 ">
+          <div class="span__tarjeta text-xl">
+            <p>Report for</p>
           </div>
-
-
+          <div class="span__nombre text-3xl">
+            <p class="name xl:text-5xl">Jeremy Robson</p>
+          </div>
         </div>
-        <div class="absolute">
-          <img src="./images/pattern-ticket.svg" alt="">
-        </div>
+        
       </div>
-      <div id="container__h1" class="">
-
-        <h1 class="text-Neutral-0 font-bold text-center text-6xl max-sm:text-2xl mb-4">Your Journey to Coding Conf 2025 Starts Here!
-        </h1>
-        <p class="text-center text-Neutral-0">Secure your spot at next year's biggest coding conference.</p>
+      <div class= "justify-around items-center align-middle h-20 flex text-xl xl:flex-col xl:gap-y-4 xl:justify-start xl:items-start xl:pl-4 ">
+        <p class="text-Pale-Blue xl:mt-8 cursor-pointer btn__daily hover:text-Pale-Blue">Daily</p>
+        <p class="text-Desaturated-blue cursor-pointer btn__weekly hover:text-Pale-Blue">Weekly</p>
+        <p class="text-Desaturated-blue cursor-pointer btn__monthly hover:text-Pale-Blue">Monthly</p>
       </div>
-
-      <div id="error-messages" class="text-red-500 text-center mt-2"></div>
-      <!-- Formulario -->
-      <!-- Formulario -->
-      <div id="container__form" class="w-full flex justify-center mt-10 mx-auto">
-        <form action="" class="lg:w-[350px] w-[90%] flex flex-col " id="form">
-          <div class="flex flex-col items-start relative">
-            <label class="text-Neutral-0 text-left mb-1" for="file-input">Upload Avatar</label>
-
-            <!-- Input file oculto -->
-            <input id="file-input" class="hidden" type="file" />
-
-            <!-- Contenedor del borde con imagen y texto dentro -->
-            <label
-              class="transition-all ease-in-out duration-300 text-left relative w-[100%] h-32 border-2 border-neutral-200 border-opacity-25 hover:bg-opacity-50 border-dashed flex items-center justify-center p-12 rounded-md bg-opacity-20 bg-Neutral-500"
-              for="file-input">
-              <div class="absolute flex items-center justify-center w-full h-full">
-                <div>
-                  <img class="mx-[auto] bg-Neutral-0 bg-opacity-20 p-2 mb-2 rounded-md" src="./images/icon-upload.svg"
-                    alt="Imagen borde" />
-                  <span class="text-center text-Neutral-0">Drag and drop or click to upload</span>
-                </div>
-              </div>
-            </label>
-
-            <!-- Instrucción de subida -->
-            <div class="flex mt-1">
-              <img class="w-4 text-Neutral-0" src="./images/icon-info.svg" alt="">
-              <p class="text-Neutral-0 text-xs">Upload your photo (JPG or PNG, max size: 500KB).</p>
-            </div>
-          </div>
-
-          <!-- Otros campos de formulario -->
-          <div class="flex flex-col space-y-2 justify-start mt-5">
-            <label class="text-Neutral-0 text-xl text-left" for="name">Full Name</label>
-            <input id="name"
-              class="transition-all hover:bg-opacity-50 ease-in-out duration-300 border-2 border-Neutral-0 border-opacity-25 bg-opacity-20 border-solid p-2 rounded-md w-full bg-Neutral-500"
-              type="text">
-          </div>
-
-          <div class="flex flex-col space-y-2 justify-start mt-5">
-            <label class="text-Neutral-0 text-xl text-left" for="email">Email address</label>
-            <input id="email"
-              class="transition-all hover:bg-opacity-50 ease-in-out duration-300 border-2 border-Neutral-0 border-opacity-25 bg-opacity-20 border-solid p-2 rounded-md w-full bg-Neutral-500"
-              type="email">
-          </div>
-
-          <div class="flex flex-col space-y-2 justify-start mt-5">
-            <label class="text-Neutral-0 text-xl text-left" for="username">GitHub Username</label>
-            <input id="username"
-              class="transition-all ease-in-out duration-300 border-2 hover:bg-opacity-50 border-Neutral-0 border-opacity-25 bg-opacity-20 border-solid p-2 rounded-md w-full bg-Neutral-500"
-              type="text">
-          </div>
-
-          <input
-            class="transition-all ease-in-out duration-200 cursor-pointer p-3 bg-Orange-500 hover:bg-Orange-700 hover:scale-y-110 rounded-md mt-6 font-black text-Neutral-900"
-            type="submit" value="Generate My Ticket">
-        </form>
-      </div>
-
     </div>
 
-    <!-- Fondo y otras imágenes absolutas -->
-    <div class="absolute top-0 left-0 w-[100vw] lg:h-[100%] h-[100%] overflow-hidden">
-      <img class="w-full h-full object-cover" src="./images/background-desktop.png" alt="Background">
-      <img class="w-[20rem] absolute top-[40%] left-[60%] z-10" src="./images/pattern-circle.svg" alt="Pattern">
-      <img class="top-0 z-20 w-[100%] h-[100%] absolute" src="./images/pattern-lines.svg" alt="Lines">
-      <img class="bottom-0 left-0 z-20 w-[50%] absolute" src="./images/pattern-squiggly-line-bottom-desktop.svg"
-        alt="Lines">
-      <img class="top-0 right-0 z-20 w-[36%] absolute" src="./images/pattern-squiggly-line-top.svg" alt="Lines">
-    </div>
   </div>
-
-
-
-
-
-
-
+  
 
 
   <script type="module" src="/src/main.js"></script>

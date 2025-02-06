@@ -7,24 +7,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "principal": "#f67464",
-        "Neutral-0": "hsl(0, 0%, 100%)",
-        "Neutral-300": "hsl(252, 6%, 83%)",
-        "Neutral-500": "hsl(245, 15%, 58%)",
-        "Neutral-700": "hsl(245, 19%, 35%)",
-        "Neutral-900": "hsl(248, 70%, 10%)",
+        "Blue": "hsl(246, 80%, 60%)",
 
-        "Orange-500": "hsl(7, 88%, 67%)",
-        "Orange-700": "hsl(7, 71%, 60%)",
+        "Light-red_W" : "hsl(15, 100%, 70%)",
+        "Soft-blue": "hsl(195, 74%, 62%)",
+        "Light-red": "hsl(348, 100%, 68%)",
+        "Lime-green": "hsl(145, 58%, 55%)",
+        "Violet": "hsl(264, 64%, 52%)",
+        "Soft-orange": "hsl(43, 84%, 65%)",
         
-
-        "Gradient": "hsl(7, 86%, 67%) to hsl(0, 0%, 100%)",
+        // ### Neutral
+        
+        "Very-dark-blue": "hsl(226, 43%, 10%)",
+        "Dark-blue": "hsl(235, 46%, 20%)",
+        "Desaturated-blue": "hsl(235, 45%, 61%)",
+        "Pale-Blue": "hsl(236, 100%, 87%)",
+        
       },
-      backgroundImage: {
-        'gradient-hsl': 'linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%))',
-      },
+    
       fontFamily: {
-        inconsolata: ['Inconsolata', 'monospace'],  // Configuración de fuente
+        Rubik: ['Rubik', 'monospace'],  // Configuración de fuente
       },
     },
   },

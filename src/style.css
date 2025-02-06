@@ -3,22 +3,50 @@
 @tailwind utilities;
 @import "tailwindcss";
 
-/* Fuente personalizada Inconsolata */
 @font-face {
-  font-family: 'Inconsolata';
-  src: url('/fonts/Inconsolata-VariableFont_wdth,wght.woff2') format('woff2');
-  font-weight: 100 900; /* Rango de pesos si la fuente es variable */
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900; 
   font-display: swap;
 }
 
-/* Estilo base para el cuerpo */
 @layer base {
   body {
-    font-family: 'Inconsolata', sans-serif; /* Asigna la fuente personalizada a todo el cuerpo */
+    font-family: 'Rubik', sans-serif; 
   }
 }
 
-/* Establece la clase 'text-principal' para que se use el color personalizado */
-.text-principal {
-  color: #f67464;
+
+.tarjeta {
+  @apply rounded-xl h-52 bg-Dark-blue flex flex-col justify-start relative mb-4 xl:col-span-3 xl:row-span-1 md:col-span-3 md:row-span-1;
+  
+}
+.img__arriba {
+  
+  @apply  justify-end flex h-24 w-full;
+  
+}
+.work{
+  @apply bg-Light-red_W;
+}
+.play{
+  @apply bg-Soft-blue;
+}
+.study{
+  @apply bg-Light-red
+  ;
+}
+.exercise{
+  @apply bg-Lime-green;
+}
+.social{
+  @apply bg-Violet;
+}
+.self-care{
+  @apply bg-Soft-orange;
+}
+
+.tarjeta_info{
+  
+  @apply bg-Dark-blue h-36 w-full absolute bottom-0 left-0 rounded-xl p-4;
 }
